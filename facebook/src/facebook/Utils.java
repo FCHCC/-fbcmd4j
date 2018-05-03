@@ -80,21 +80,23 @@ public class Utils {
 		
 		try {
 			
-				URL url = new URL("https://graph.facebook.com/v2.6/device/login");
+				URL url = new URL("https://www.facebook.com");
 				
 				Map<String, Object> data = new LinkedHashMap<>();
 				
-				data.put("access_token", "231297794085501|d249a1c5a713eb615a938137cdf83bd1");
+				data.put("access_token", "231297794085501|chzSpiDgS28u4I8kJGUjSwFdByU");
 				data.put("scope", props.getProperty("oauth.permissions"));
 				
 				StringBuilder post = new StringBuilder();
 				
 				for(Map.Entry<String, Object> d : data.entrySet()) {
 					
-						if(post.length()!=0) post.append('&');
-							post.append(URLEncoder.encode(d.getKey(),"UTF-"));
-							post.append('=');
-							post.append(URLEncoder.encode(String.valueOf(d.getValue()),"UTF-8"));
+						if(post.length()!=0) { 
+							post.append('&');
+							}
+						post.append(URLEncoder.encode(d.getKey(),"UTF-8"));
+						post.append('=');
+						post.append(URLEncoder.encode(String.valueOf(d.getValue()),"UTF-8"));
 							
 				}
 				
@@ -133,13 +135,15 @@ public class Utils {
 				
 				URL urldos = new URL("https://graph.facebook.com/v2.6/device/login_status");
 				data = new LinkedHashMap<>();
-				data.put("acces_token","231297794085501|d249a1c5a713eb615a938137cdf83bd1" );
+				data.put("acces_token","231297794085501|chzSpiDgS28u4I8kJGUjSwFdByU" );
 				data.put("code", code);
 				
 				post = new StringBuilder();
 				for(Map.Entry<String, Object> d : data.entrySet()) {
 					
-						if(post.length()!=0) post.append("&");
+						if(post.length()!=0) {
+							post.append("&");
+							}
 						
 							post.append(URLEncoder.encode(d.getKey(),"UTF-8"));
 							post.append("=");

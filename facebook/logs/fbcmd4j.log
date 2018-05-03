@@ -1,0 +1,67 @@
+2018-05-03 01:07:47.387 [main] INFO  facebook.Main - Iniciando app
+2018-05-03 01:07:47.402 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 01:07:47.448 [main] INFO  facebook.Utils - La propiedadaouth.accessTokenesta vacia
+2018-05-03 01:07:47.504 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 01:07:47.507 [main] ERROR facebook.Main - java.util.MissingFormatArgumentException: Format specifier '%s'
+2018-05-03 01:09:27.300 [main] INFO  facebook.Main - Iniciando app
+2018-05-03 01:09:27.306 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 01:09:27.354 [main] INFO  facebook.Utils - La propiedadaouth.accessTokenesta vacia
+2018-05-03 01:09:27.411 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 01:09:43.853 [main] ERROR facebook.Utils - java.io.UnsupportedEncodingException: UTF-
+2018-05-03 01:09:43.853 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 01:09:43.854 [main] INFO  facebook.Utils - La propiedadaouth.accessTokenesta vacia
+2018-05-03 01:09:43.854 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 01:09:52.244 [main] ERROR facebook.Utils - java.io.UnsupportedEncodingException: UTF-
+2018-05-03 01:09:52.245 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 01:09:52.245 [main] INFO  facebook.Utils - La propiedadaouth.accessTokenesta vacia
+2018-05-03 01:09:52.245 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 01:14:44.216 [main] INFO  facebook.Main - Iniciando app
+2018-05-03 01:14:44.222 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 01:14:44.266 [main] INFO  facebook.Utils - La propiedadaouth.accessTokenesta vacia
+2018-05-03 01:14:44.329 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 01:14:55.203 [main] ERROR facebook.Utils - java.io.UnsupportedEncodingException: UTF-
+2018-05-03 01:14:55.204 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 01:14:55.204 [main] INFO  facebook.Utils - La propiedadaouth.accessTokenesta vacia
+2018-05-03 01:14:55.204 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 01:15:16.443 [main] ERROR facebook.Utils - java.io.UnsupportedEncodingException: UTF-
+2018-05-03 01:15:16.443 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 01:15:16.444 [main] INFO  facebook.Utils - La propiedadaouth.accessTokenesta vacia
+2018-05-03 01:15:16.444 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 01:20:20.099 [main] INFO  facebook.Main - Iniciando app
+2018-05-03 01:20:20.105 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 01:20:20.154 [main] INFO  facebook.Utils - La propiedadoauth.accessTokenesta vacia
+2018-05-03 01:20:20.216 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 01:20:23.008 [main] ERROR facebook.Utils - java.io.UnsupportedEncodingException: UTF-
+2018-05-03 01:20:23.008 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 01:20:23.009 [main] INFO  facebook.Utils - La propiedadoauth.accessTokenesta vacia
+2018-05-03 01:20:23.009 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 01:26:34.058 [main] INFO  facebook.Main - Iniciando app
+2018-05-03 01:26:34.065 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 01:26:34.171 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 01:26:37.124 [main] ERROR facebook.Utils - java.io.UnsupportedEncodingException: UTF-
+2018-05-03 01:26:37.124 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 01:26:37.125 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 01:26:46.387 [main] ERROR facebook.Utils - java.io.UnsupportedEncodingException: UTF-
+2018-05-03 01:26:46.388 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 01:26:46.388 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 01:27:44.743 [main] INFO  facebook.Main - Iniciando app
+2018-05-03 01:27:44.750 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 01:27:44.852 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 01:27:48.031 [main] ERROR facebook.Utils - java.io.IOException: Server returned HTTP response code: 400 for URL: https://graph.facebook.com/v2.6/device/login
+2018-05-03 01:27:48.031 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 01:27:48.032 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 01:35:02.591 [main] INFO  facebook.Main - Iniciando app
+2018-05-03 01:35:02.601 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 01:35:02.809 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 01:35:03.060 [main] INFO  facebook.Main - Iniciando app
+2018-05-03 01:35:03.066 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 01:35:03.171 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 01:35:05.979 [main] ERROR facebook.Utils - facebook4j.internal.org.json.JSONException: A JSONObject text must begin with '{' found:! at 2 [character 3 line 1]
+2018-05-03 01:35:05.979 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 01:35:05.980 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 01:39:55.055 [main] INFO  facebook.Main - Iniciando app
+2018-05-03 01:39:55.062 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 01:39:55.170 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 01:39:59.078 [main] ERROR facebook.Utils - facebook4j.internal.org.json.JSONException: A JSONObject text must begin with '{' found:! at 2 [character 3 line 1]
+2018-05-03 01:39:59.079 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 01:39:59.081 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
