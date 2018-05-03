@@ -1,6 +1,8 @@
 package facebook;
 
 import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.Reader;
@@ -12,6 +14,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.LinkedHashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.Properties;
 import java.util.Scanner;
@@ -24,6 +27,7 @@ import org.apache.logging.log4j.Logger;
 import facebook4j.Facebook;
 import facebook4j.FacebookException;
 import facebook4j.FacebookFactory;
+import facebook4j.Post;
 import facebook4j.auth.AccessToken;
 import facebook4j.internal.org.json.JSONObject;
 
@@ -44,18 +48,22 @@ public class Utils {
 							
 						Files.copy(Utils.class.getResourceAsStream("fbcmd4j.properties"), configFile);
 					}
+			
+					props.load(Files.newInputStream(configFile));
+					BiConsumer<Object, Object> emptyProperty = (k,v)->{
+							if(((String)v).isEmpty()) {
+								logger.info("La propiedad"+k+"esta vacia");
+							}
 				
+					 };
+					 
+					 props.forEach(emptyProperty);
+		
+		}else {
+			logger.info("Creando nuevo archivo de configuracion.");
+			Files.copy(Paths.get("facebook", "fbcmd4j.properties"),configFile);
 		}
-		
-		props.load(Files.newInputStream(configFile));
-		BiConsumer<Object, Object> emptyProperty = (k,v)->{
-				if(((String)v).isEmpty()) {
-					logger.info("La propiedad"+k+"esta vacia");
-				}
-	
-		 };
-		
-		props.forEach(emptyProperty);
+			
 		return props;
 	}
 	
@@ -180,7 +188,7 @@ public class Utils {
 
 public static void saveProperties(String folderName,String fileName,Properties props) throws IOException{
 	Path configFile = Paths.get(folderName, fileName);
-	props.store(Files.newOutputStream(configFile), fileName);	
+	props.store(Files.newOutputStream(configFile), "Generado por ObtenerAccessToken");	
 }
 
 public static Facebook configurarFacebook(Properties props) {
@@ -215,6 +223,37 @@ public static void compartirLink(String link, Facebook fb)throws MalformedURLExc
 		logger.error(e);
 	}
 	
+}
+
+public static String savePosts(String fileName, List<Post>posts) {
+	File file = new File(fileName + ".txt");
+	
+	try {
+		if(!file.exists()) {
+			file.createNewFile();
+		}
+	
+		FileOutputStream savefile = new FileOutputStream(file);
+		for(Post p : posts) {
+				String msg = "";
+				
+				if(p.getStory()!= null) {
+					msg += "Story: " + p.getStory() + "\n";
+				
+				}
+				if(p.getMessage()!= null) {
+					msg += "Mensaje: " + p.getMessage()+"\n";
+				}
+				savefile.write(msg.getBytes());
+		}
+		
+		savefile.close();
+		logger.info("Posts guardados en " + file.getName() );
+		System.out.println("Post guardados en archivo" + file.getName());
+	}catch(IOException e) {
+		logger.error(e);
+	}
+	return file.getName();
 }
 
 }

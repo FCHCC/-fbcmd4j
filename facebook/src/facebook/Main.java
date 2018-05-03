@@ -67,12 +67,15 @@ public class Main {
 							System.out.println("Cargando NewsFeed...");
 							ResponseList<Post> newsFeed = fb.getFeed();
 							newsFeed.forEach(System.out::println);
+							Utils.savePosts("Newsfeed", newsFeed);
 							break;
 							
 						case 3:
 							System.out.println("Cargando Wall...");
 							ResponseList<Post> wall = fb.getPosts();
 							wall.forEach(System.out::println);
+							Utils.savePosts("Wall", wall);
+							
 							
 						case 4:
 							System.out.println("Compartir link: ");
