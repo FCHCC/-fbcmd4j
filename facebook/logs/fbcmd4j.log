@@ -65,3 +65,182 @@
 2018-05-03 01:39:59.078 [main] ERROR facebook.Utils - facebook4j.internal.org.json.JSONException: A JSONObject text must begin with '{' found:! at 2 [character 3 line 1]
 2018-05-03 01:39:59.079 [main] INFO  facebook.Utils - Creando archivo de configuracion
 2018-05-03 01:39:59.081 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 09:18:32.951 [main] INFO  facebook.Main - Iniciando app
+2018-05-03 09:18:33.187 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 09:18:33.317 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 09:18:38.772 [main] ERROR facebook.Utils - facebook4j.internal.org.json.JSONException: A JSONObject text must begin with '{' found:! at 2 [character 3 line 1]
+2018-05-03 09:18:38.772 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 09:18:38.773 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 09:22:50.097 [main] INFO  facebook.Main - Iniciando app
+2018-05-03 09:22:50.103 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 09:22:50.219 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 09:22:57.017 [main] ERROR facebook.Utils - facebook4j.internal.org.json.JSONException: A JSONObject text must begin with '{' found:! at 2 [character 3 line 1]
+2018-05-03 09:22:57.017 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 09:22:57.018 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 09:24:03.688 [main] INFO  facebook.Main - Iniciando app
+2018-05-03 09:24:03.694 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 09:24:03.807 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 09:24:07.358 [main] ERROR facebook.Utils - facebook4j.internal.org.json.JSONException: A JSONObject text must begin with '{' found:! at 2 [character 3 line 1]
+2018-05-03 09:24:07.358 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 09:24:07.359 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 09:24:59.832 [main] INFO  facebook.Main - Iniciando app
+2018-05-03 09:24:59.838 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 09:24:59.953 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 09:28:22.679 [main] INFO  facebook.Main - Iniciando app
+2018-05-03 09:28:22.687 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 09:28:22.791 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 09:28:28.323 [main] ERROR facebook.Utils - facebook4j.internal.org.json.JSONException: A JSONObject text must begin with '{' found:! at 2 [character 3 line 1]
+2018-05-03 09:28:28.324 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 09:28:28.324 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 09:29:28.517 [main] INFO  facebook.Main - Iniciando app
+2018-05-03 09:29:28.523 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 09:29:28.644 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 09:29:33.284 [main] ERROR facebook.Utils - facebook4j.internal.org.json.JSONException: A JSONObject text must begin with '{' found:! at 2 [character 3 line 1]
+2018-05-03 09:29:33.285 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 09:29:33.287 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 09:46:45.757 [main] INFO  facebook.Main - Iniciando app
+2018-05-03 09:46:45.764 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 09:46:45.868 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 09:46:48.926 [main] ERROR facebook.Utils - facebook4j.internal.org.json.JSONException: A JSONObject text must begin with '{' found:! at 2 [character 3 line 1]
+2018-05-03 09:46:48.927 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 09:46:48.927 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 09:47:43.408 [main] INFO  facebook.Main - Iniciando app
+2018-05-03 09:47:43.415 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 09:47:43.530 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 09:47:47.758 [main] ERROR facebook.Utils - facebook4j.internal.org.json.JSONException: Expected a ':' after a key at 15 [character 16 line 1]
+2018-05-03 09:47:47.759 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 09:47:47.761 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 09:49:18.176 [main] INFO  facebook.Main - Iniciando app
+2018-05-03 09:49:18.182 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 09:49:18.292 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 09:49:26.489 [main] ERROR facebook.Utils - facebook4j.internal.org.json.JSONException: Expected a ':' after a key at 15 [character 16 line 1]
+2018-05-03 09:49:26.490 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 09:49:26.492 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 10:52:08.341 [main] INFO  facebook.Main - Iniciando app
+2018-05-03 10:52:08.348 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 10:52:08.455 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 10:52:12.010 [main] ERROR facebook.Utils - java.io.IOException: Server returned HTTP response code: 400 for URL: https://graph.facebook.com/v2.6/device/login
+2018-05-03 10:52:12.010 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 10:52:12.012 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 10:52:52.196 [main] INFO  facebook.Main - Iniciando app
+2018-05-03 10:52:52.204 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 10:52:52.337 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 10:52:56.973 [main] ERROR facebook.Utils - java.io.IOException: Server returned HTTP response code: 400 for URL: https://graph.facebook.com/v2.6/device/login
+2018-05-03 10:52:56.973 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 10:52:56.974 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 10:54:23.508 [main] INFO  facebook.Main - Iniciando app
+2018-05-03 10:54:23.518 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 10:54:23.627 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 10:54:26.534 [main] ERROR facebook.Utils - java.io.IOException: Server returned HTTP response code: 400 for URL: https://graph.facebook.com/oauth/access_token
+2018-05-03 10:54:26.534 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 10:54:26.536 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 11:01:30.728 [main] INFO  facebook.Main - Iniciando app
+2018-05-03 11:01:30.734 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 11:01:30.848 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 11:01:34.642 [main] ERROR facebook.Utils - java.io.IOException: Server returned HTTP response code: 400 for URL: https://graph.facebook.com/v2.11
+2018-05-03 11:01:34.643 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 11:01:34.645 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 11:14:36.128 [main] INFO  facebook.Main - Iniciando app
+2018-05-03 11:14:36.135 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 11:14:36.239 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 11:14:40.989 [main] ERROR facebook.Utils - java.io.IOException: Server returned HTTP response code: 400 for URL: https://graph.facebook.com/v3.0
+2018-05-03 11:14:40.991 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 11:14:40.992 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 11:36:32.136 [main] INFO  facebook.Main - Iniciando app
+2018-05-03 11:36:32.143 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 11:36:32.255 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 11:36:33.973 [main] ERROR facebook.Utils - java.net.MalformedURLException: unknown protocol: hhttps
+2018-05-03 11:36:33.974 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 11:36:33.974 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 11:36:50.556 [main] INFO  facebook.Main - Iniciando app
+2018-05-03 11:36:50.562 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 11:36:50.675 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 11:36:53.416 [main] ERROR facebook.Utils - java.io.IOException: Server returned HTTP response code: 400 for URL: https://graph.facebook.com/oauth/access_token?
+2018-05-03 11:36:53.417 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 11:36:53.419 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 11:45:23.593 [main] INFO  facebook.Main - Iniciando app
+2018-05-03 11:45:23.601 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 11:45:23.719 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 11:45:26.545 [main] ERROR facebook.Utils - java.io.IOException: Server returned HTTP response code: 400 for URL: https://graph.facebook.com/v2.11/device/login
+2018-05-03 11:45:26.546 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 11:45:26.547 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 11:49:31.181 [main] INFO  facebook.Main - Iniciando app
+2018-05-03 11:49:31.189 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 11:49:31.297 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 11:49:34.360 [main] ERROR facebook.Utils - java.io.IOException: Server returned HTTP response code: 400 for URL: https://graph.facebook.com/v2.12/device/login
+2018-05-03 11:49:34.361 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 11:49:34.362 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 11:56:31.088 [main] INFO  facebook.Main - Iniciando app
+2018-05-03 11:56:31.094 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 11:56:31.194 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 11:56:35.463 [main] ERROR facebook.Utils - java.io.IOException: Server returned HTTP response code: 400 for URL: https://graph.facebook.com/v2.6/device/login
+2018-05-03 11:56:35.464 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 11:56:35.465 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 11:59:22.825 [main] INFO  facebook.Main - Iniciando app
+2018-05-03 11:59:22.832 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 11:59:22.942 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 11:59:25.441 [main] ERROR facebook.Utils - java.io.IOException: Server returned HTTP response code: 400 for URL: https://graph.facebook.com/v2.6/me?fields=id,name
+2018-05-03 11:59:25.442 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 11:59:25.444 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 12:12:10.739 [main] INFO  facebook.Main - Iniciando app
+2018-05-03 12:12:10.746 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 12:12:10.867 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 12:12:16.572 [main] ERROR facebook.Utils - java.io.IOException: Server returned HTTP response code: 400 for URL: https://graph.facebook.com/v2.6/device/login
+2018-05-03 12:12:16.573 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 12:12:16.575 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 12:12:27.373 [main] INFO  facebook.Main - Iniciando app
+2018-05-03 12:12:27.380 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 12:12:27.493 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 12:12:30.602 [main] ERROR facebook.Utils - java.io.IOException: Server returned HTTP response code: 400 for URL: https://graph.facebook.com
+2018-05-03 12:12:30.602 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 12:12:30.604 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 12:12:37.724 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 12:27:49.561 [main] INFO  facebook.Main - Iniciando app
+2018-05-03 12:27:49.568 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 12:27:49.678 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 12:27:52.384 [main] ERROR facebook.Utils - java.io.IOException: Server returned HTTP response code: 400 for URL: https://graph.facebook.com/v2.6/device/login
+2018-05-03 12:27:52.384 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 12:29:18.175 [main] INFO  facebook.Main - Iniciando app
+2018-05-03 12:29:18.183 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 12:29:18.232 [main] INFO  facebook.Utils - La propiedadoauth.accessTokenesta vacia
+2018-05-03 12:29:18.294 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 12:29:24.007 [main] ERROR facebook.Utils - java.io.IOException: Server returned HTTP response code: 400 for URL: https://graph.facebook.com/v2.6/device/login
+2018-05-03 12:29:24.007 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 12:36:50.084 [main] INFO  facebook.Main - Iniciando app
+2018-05-03 12:36:50.091 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 12:36:50.237 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 12:36:53.121 [main] ERROR facebook.Utils - java.io.IOException: Server returned HTTP response code: 400 for URL: https://graph.facebook.com/v2.12/device/login
+2018-05-03 12:36:53.122 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 12:36:53.123 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 12:38:14.482 [main] INFO  facebook.Main - Iniciando app
+2018-05-03 12:38:14.489 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 12:38:14.605 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 12:38:17.436 [main] ERROR facebook.Utils - java.io.IOException: Server returned HTTP response code: 400 for URL: https://graph.facebook.com/v2.12/device/login
+2018-05-03 12:38:17.437 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 12:38:17.438 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 12:40:59.054 [main] INFO  facebook.Main - Iniciando app
+2018-05-03 12:40:59.060 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 12:40:59.171 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 12:41:01.723 [main] ERROR facebook.Utils - java.io.IOException: Server returned HTTP response code: 400 for URL: https://graph.facebook.com/v2.12/device/login
+2018-05-03 12:41:01.724 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 12:41:01.726 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 12:43:43.929 [main] INFO  facebook.Main - Iniciando app
+2018-05-03 12:43:43.937 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 12:43:44.045 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 12:43:48.263 [main] ERROR facebook.Utils - java.io.IOException: Server returned HTTP response code: 400 for URL: https://graph.facebook.com/v2.12
+2018-05-03 12:43:48.264 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 12:43:48.265 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 12:44:16.247 [main] INFO  facebook.Main - Iniciando app
+2018-05-03 12:44:16.254 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 12:44:16.374 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 12:44:20.523 [main] ERROR facebook.Utils - java.io.IOException: Server returned HTTP response code: 400 for URL: https://graph.facebook.com/v2.12
+2018-05-03 12:44:20.523 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 12:44:20.525 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 12:44:26.674 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 12:44:31.728 [main] INFO  facebook.Utils - Posts guardados en Newsfeed.txt
+2018-05-03 12:44:31.728 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 12:44:42.568 [main] INFO  facebook.Utils - Posts guardados en Wall.txt
+2018-05-03 12:45:05.460 [main] ERROR facebook.Utils - java.net.MalformedURLException: no protocol: www.facebook.com
+2018-05-03 12:45:05.460 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 12:45:12.537 [main] ERROR facebook.Utils - java.net.MalformedURLException: no protocol: H
+2018-05-03 12:45:12.537 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
