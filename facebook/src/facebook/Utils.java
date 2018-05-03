@@ -35,38 +35,6 @@ public class Utils {
 	
 	static final Logger logger = LogManager.getLogger(Utils.class);
 	
-	public static Properties loadPropertiesFromFile(String folderName, String fileName) throws IOException{
-		Properties props = new Properties();
-		Path configFolder = Paths.get(folderName);
-		Path configFile = Paths.get(folderName, fileName);
-		if(Files.exists(configFile)) {
-				logger.info("Creando archivo de configuracion");
-				
-					if(!Files.exists(configFolder)) {
-						Files.createDirectory(configFolder);
-					
-							
-						Files.copy(Utils.class.getResourceAsStream("fbcmd4j.properties"), configFile);
-					}
-			
-					props.load(Files.newInputStream(configFile));
-					BiConsumer<Object, Object> emptyProperty = (k,v)->{
-							if(((String)v).isEmpty()) {
-								logger.info("La propiedad"+k+"esta vacia");
-							}
-				
-					 };
-					 
-					 props.forEach(emptyProperty);
-		
-		}else {
-			logger.info("Creando nuevo archivo de configuracion.");
-			Files.copy(Paths.get("facebook", "fbcmd4j.properties"),configFile);
-		}
-			
-		return props;
-	}
-
 	
 	public static void obtenerAccessTokens(String folderName, String fileName, Properties props, Scanner scanner) {
 	
@@ -164,14 +132,44 @@ public class Utils {
 			logger.error(e);
 		}
 	}
-	
 		
-	
 
 
 public static void saveProperties(String folderName,String fileName,Properties props) throws IOException{
 	Path configFile = Paths.get(folderName, fileName);
 	props.store(Files.newOutputStream(configFile), "Generado por ObtenerAccessToken");	
+}
+
+public static Properties loadPropertiesFromFile(String folderName, String fileName) throws IOException{
+	Properties props = new Properties();
+	Path configFolder = Paths.get(folderName);
+	Path configFile = Paths.get(folderName, fileName);
+	if(Files.exists(configFile)) {
+			logger.info("Creando archivo de configuracion");
+			
+				if(!Files.exists(configFolder)) {
+					Files.createDirectory(configFolder);
+				
+						
+					Files.copy(Utils.class.getResourceAsStream("fbcmd4j.properties"), configFile);
+				}
+		
+				props.load(Files.newInputStream(configFile));
+				BiConsumer<Object, Object> emptyProperty = (k,v)->{
+						if(((String)v).isEmpty()) {
+							logger.info("La propiedad"+k+"esta vacia");
+						}
+			
+				 };
+				 
+				 props.forEach(emptyProperty);
+	
+	}else {
+		logger.info("Creando nuevo archivo de configuracion.");
+		Files.copy(Paths.get("facebook", "fbcmd4j.properties"),configFile);
+	}
+		
+	return props;
 }
 
 public static Facebook configurarFacebook(Properties props) {
