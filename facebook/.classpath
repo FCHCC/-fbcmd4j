@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Users/1034558244/Documents/GitHub/fbcmdj4/fbcmd4j/facebook/facebook4j-core-2.4.10.jar"/>
+	<classpathentry kind="lib" path="C:/Users/1034558244/Documents/GitHub/JAVA/CS13303/lib/log4j-api-2.4.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/1034558244/Documents/GitHub/JAVA/CS13303/lib/log4j-core-2.4.1.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
