@@ -1,3 +1,4 @@
+Mensaje: Evidencia Final Java
 Mensaje: Hola
 Mensaje: Hola
 Story: Fernanda Cachón shared a video.
@@ -8,7 +9,7 @@ Story: Fernanda Cachón shared a video.
 Mensaje: No spoilers por favor ! Los odiaré por siempre ?
 Story: Fernanda Cachón shared a post.
 Mensaje: ?
-Story: Fernanda Cachón is with Eligio Cachón Menéndez and Aida Menéndez.
+Story: Fernanda Cachón is with Aida Menéndez and Eligio Cachón Menéndez.
 Mensaje: ?
 Story: Fernanda Cachón is at San Cristóbal de Las Casas, Pueblo Mágico.
 Mensaje: Conociendo San Cristobal de las Casas ?
@@ -32,8 +33,6 @@ Story: Fernanda Cachón shared a post.
 Mensaje: REAL
 Story: Fernanda Cachón updated her profile video.
 Story: Fernanda Cachón shared a post.
-Story: Fernanda Cachón shared a photo.
-Story: Fernanda Cachón shared a video.
-Mensaje: Frida Gizela Leon Arias tienes que ver esto jajaja
 Story: Fernanda Cachón shared a post.
-Mensaje: ?
+Mensaje: Somebody saaaaaaaveee meeeeeee ?
+Story: Fernanda Cachón shared a photo.

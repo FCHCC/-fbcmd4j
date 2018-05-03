@@ -37,7 +37,7 @@ public class Main {
 			while(true) {
 			//Menu
 			fb = Utils.configurarFacebook(props);
-			System.out.format("Cliente Simple de Facebook");
+			System.out.format("Cliente Simple de Facebook" + "\n");
 			System.out.println("Opciones: ");
 			System.out.println("0) Cargar configuracion");
 			System.out.println("1) Publicar Estado");

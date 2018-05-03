@@ -48,90 +48,109 @@ public class Utils {
 
 		
 		try {
-			URL url = new URL("https://graph.facebook.com/v2.12");
-	        Map<String,Object> params = new LinkedHashMap<>();
-	        params.put("access_token", "231297794085501|chzSpiDgS28u4I8kJGUjSwFdByU");
-	        params.put("scope", props.getProperty("oauth.permissions"));
-
-	        StringBuilder postData = new StringBuilder();
-	        for (Map.Entry<String,Object> param : params.entrySet()) {
-	            if (postData.length() != 0) postData.append('&');
-	            postData.append(URLEncoder.encode(param.getKey(), "UTF-8"));
-	            postData.append('=');
-	            postData.append(URLEncoder.encode(String.valueOf(param.getValue()), "UTF-8"));
-	        }
-	        byte[] postDataBytes = postData.toString().getBytes("UTF-8");
-
-	        HttpURLConnection conn = (HttpURLConnection)url.openConnection();
-	        conn.setRequestMethod("POST");
-	        conn.setRequestProperty("Content-Type", "application/json; charset=UTF-8");
-	        conn.setRequestProperty("Content-Length", String.valueOf(postDataBytes.length));
-	        conn.setDoOutput(true);
-	        conn.getOutputStream().write(postDataBytes);
-
-	        Reader in = new BufferedReader(new InputStreamReader(conn.getInputStream(), "UTF-8"));
-	        StringBuilder sb = new StringBuilder();
-	        for (int c; (c = in.read()) >= 0;)
-	            sb.append((char)c);
-	        String response = sb.toString();
-	        
-	        JSONObject obj = new JSONObject(response);
-	        String code = obj.getString("code");
-	        String userCode = obj.getString("user_code");
-	        
-			System.out.println("Ingresa a la página https://www.facebook.com/device con el código: " + userCode);
-
-			String accessToken = "";
-			while(accessToken.isEmpty()) {
-		        try {
-		            TimeUnit.SECONDS.sleep(5);
-		        } catch (InterruptedException e) {
-					logger.error(e);
-		        }
-
-		        URL url1 = new URL("https://graph.facebook.com/v2.12/");
-		        params = new LinkedHashMap<>();
-		        params.put("access_token", "231297794085501|chzSpiDgS28u4I8kJGUjSwFdByU");
-		        params.put("code", code);
-	
-		        postData = new StringBuilder();
-		        for (Map.Entry<String,Object> param : params.entrySet()) {
-		            if (postData.length() != 0) postData.append('&');
-		            postData.append(URLEncoder.encode(param.getKey(), "UTF-8"));
-		            postData.append('=');
-		            postData.append(URLEncoder.encode(String.valueOf(param.getValue()), "UTF-8"));
-		        }
-		        postDataBytes = postData.toString().getBytes("UTF-8");
-	
-		        HttpURLConnection conn1 = (HttpURLConnection)url1.openConnection();
-		        conn1.setRequestMethod("POST");
-		        conn1.setRequestProperty("Content-Type", "application/json; charset=UTF-8");
-		        conn1.setRequestProperty("Content-Length", String.valueOf(postDataBytes.length));
-		        conn1.setDoOutput(true);
-		        conn1.getOutputStream().write(postDataBytes);
-
-		        try {
-		        	in = new BufferedReader(new InputStreamReader(conn1.getInputStream(), "UTF-8"));
-			        sb = new StringBuilder();
-			        for (int c; (c = in.read()) >= 0;)
-			            sb.append((char)c);		        
-			        response = sb.toString();
-			        
-			        obj = new JSONObject(response);
-			        accessToken = obj.getString("access_token");
-		        } catch(IOException ignore) {
-		        }
-		    }
+			URL url = new URL("https://graph.facebook.com/v2.12/device/login");
 			
-	        props.setProperty("oauth.accessToken", accessToken);
-	        
-			saveProperties(folderName, fileName, props);
-			System.out.println("Configuración guardada exitosamente.");
-			logger.info("Configuración guardada exitosamente.");
-		} catch(Exception e) {
-			logger.error(e);
+			Map<String, Object> data = new LinkedHashMap<>();
+			
+			data.put("access_token", "231297794085501|chzSpiDgS28u4I8kJGUjSwFdByU");
+			data.put("scope", props.getProperty("oauth.permissions"));
+			
+			StringBuilder post = new StringBuilder();
+			
+			for(Map.Entry<String, Object> d : data.entrySet()) {
+				
+					if(post.length() != 0) { 
+						post.append('&');
+						}
+					post.append(URLEncoder.encode(d.getKey(),"UTF-8"));
+					post.append('=');
+					post.append(URLEncoder.encode(String.valueOf(d.getValue()),"UTF-8"));
+						
+			}
+			
+			byte[] postDataBytes = post.toString().getBytes("UTF-8");
+			
+			HttpURLConnection  connect = (HttpURLConnection)url.openConnection();
+			connect.setRequestMethod("POST");
+			connect.setRequestProperty("Content-Type", "application/json; charset=UTF-8");
+			connect.setDoOutput(true);
+			connect.getOutputStream().write(postDataBytes);
+			
+			Reader in = new BufferedReader (new InputStreamReader(connect.getInputStream(),"UTF-8"));
+			
+			StringBuilder sb = new StringBuilder();
+			for(int d; (d = in.read())>=0;) {
+				sb.append((char)d);
+			}
+			
+			String response = sb.toString();
+			JSONObject obj = new JSONObject(response);
+			String code = obj.getString("code");
+			String userCode = obj.getString("user_code");
+			
+			System.out.println("Ingresa a la pagina https://www.facebook.com/device con el codigo: " +userCode);
+			String accessToken ="";
+			while(accessToken.isEmpty()) {
+			try {
+				TimeUnit.SECONDS.sleep(5);
+			}catch(InterruptedException e){
+				
+				logger.error(e);
+				
 		}
+			
+			
+			URL urldos = new URL("https://graph.facebook.com/v2.12/device/login_status");
+			data = new LinkedHashMap<>();
+			data.put("acces_token","231297794085501|chzSpiDgS28u4I8kJGUjSwFdByU" );
+			data.put("code", code);
+			
+			post = new StringBuilder();
+			for(Map.Entry<String, Object> d : data.entrySet()) {
+				
+					if(post.length()!=0) {
+						post.append("&");
+						}
+					
+						post.append(URLEncoder.encode(d.getKey(),"UTF-8"));
+						post.append("=");
+						post.append(URLEncoder.encode(String.valueOf(d.getValue()),"UTF-8"));
+			}
+			
+			postDataBytes = post.toString().getBytes("UTF-8");
+			
+			HttpURLConnection connectdos = (HttpURLConnection)urldos.openConnection();
+			connectdos.setRequestMethod("POST");
+			connectdos.setRequestProperty("content-Type", "application/json; charset=UTF-8");
+			connectdos.setRequestProperty("Content-Length", String.valueOf(postDataBytes.length));
+			connectdos.setDoOutput(true);
+			connectdos.getOutputStream().write(postDataBytes);
+			
+			try {
+				in = new BufferedReader(new InputStreamReader(connectdos.getInputStream(),"UTF-8"));
+				sb = new StringBuilder();
+				for(int d;(d=in.read())>=0;) {
+					sb.append((char)d);
+				}
+				response= sb.toString();
+				obj = new JSONObject(response);
+				accessToken = obj.getString("access_token");
+			}catch(IOException ignore) {
+				logger.error(ignore);
+			}
+			
 	}
+	
+	props.setProperty("oauth.accessToken", accessToken);
+	saveProperties(folderName,fileName,props);
+
+    logger.info("Configuracion guardada");
+	}catch(Exception e) {
+	logger.error(e);
+
+}
+
+}
 		
 
 

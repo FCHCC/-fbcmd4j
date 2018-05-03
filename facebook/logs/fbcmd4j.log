@@ -244,3 +244,77 @@
 2018-05-03 12:45:05.460 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
 2018-05-03 12:45:12.537 [main] ERROR facebook.Utils - java.net.MalformedURLException: no protocol: H
 2018-05-03 12:45:12.537 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 12:55:04.199 [main] INFO  facebook.Main - Iniciando app
+2018-05-03 12:55:04.206 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 12:55:04.360 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 12:55:08.073 [main] ERROR facebook.Utils - facebook4j.internal.org.json.JSONException: A JSONObject text must begin with '{' found:! at 2 [character 3 line 1]
+2018-05-03 12:55:08.073 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 12:55:08.074 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 12:55:54.213 [main] INFO  facebook.Main - Iniciando app
+2018-05-03 12:55:54.221 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 12:55:54.358 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 12:55:57.131 [main] ERROR facebook.Utils - java.io.FileNotFoundException: https://graph.facebook.com/v2.12/login/devices
+2018-05-03 12:55:57.132 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 12:55:57.133 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 12:57:14.075 [main] INFO  facebook.Main - Iniciando app
+2018-05-03 12:57:14.084 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 12:57:14.244 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 12:57:18.207 [main] ERROR facebook.Utils - java.io.IOException: Server returned HTTP response code: 400 for URL: https://graph.facebook.com/v2.12/device/login
+2018-05-03 12:57:18.208 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 12:57:18.209 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 13:02:32.899 [main] INFO  facebook.Main - Iniciando app
+2018-05-03 13:02:32.907 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 13:02:33.017 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 13:02:47.590 [main] ERROR facebook.Utils - java.io.IOException: Server returned HTTP response code: 400 for URL: https://graph.facebook.com/v2.12/device/login
+2018-05-03 13:02:47.591 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 13:02:47.594 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 13:02:53.209 [main] ERROR facebook.Utils - java.io.IOException: Server returned HTTP response code: 400 for URL: https://graph.facebook.com/v2.12/device/login
+2018-05-03 13:02:53.210 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 13:02:53.211 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 13:03:03.682 [main] ERROR facebook.Utils - message - Error validating access token: Session has expired on Thursday, 03-May-18 11:00:00 PDT. The current time is Thursday, 03-May-18 11:03:03 PDT.
+code - 190
+subcode - 463
+Relevant information for error recovery can be found on the Facebook Developers Document:
+	https://developers.facebook.com/docs/graph-api/using-graph-api/#errors
+
+FacebookException{statusCode=400, errorType='OAuthException', errorMessage='Error validating access token: Session has expired on Thursday, 03-May-18 11:00:00 PDT. The current time is Thursday, 03-May-18 11:03:03 PDT.', errorCode=190, errorSubcode=463, version=2.4.10}
+2018-05-03 13:03:03.683 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 13:03:13.233 [main] ERROR facebook.Main - Error validating access token: Session has expired on Thursday, 03-May-18 11:00:00 PDT. The current time is Thursday, 03-May-18 11:03:13 PDT.
+2018-05-03 13:04:48.395 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 13:04:53.532 [main] ERROR facebook.Main - Error validating access token: Session has expired on Thursday, 03-May-18 11:00:00 PDT. The current time is Thursday, 03-May-18 11:04:53 PDT.
+2018-05-03 13:05:08.378 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 13:05:10.761 [main] ERROR facebook.Main - Error validating access token: Session has expired on Thursday, 03-May-18 11:00:00 PDT. The current time is Thursday, 03-May-18 11:05:10 PDT.
+2018-05-03 13:05:17.845 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 13:05:20.345 [main] ERROR facebook.Utils - java.net.MalformedURLException: no protocol: dvd
+2018-05-03 13:05:20.346 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 13:06:12.414 [main] INFO  facebook.Main - Iniciando app
+2018-05-03 13:06:12.421 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 13:06:12.465 [main] INFO  facebook.Utils - La propiedadoauth.accessTokenesta vacia
+2018-05-03 13:06:12.504 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 13:06:15.248 [main] ERROR facebook.Utils - java.io.IOException: Server returned HTTP response code: 400 for URL: https://graph.facebook.com/v2.12/device/login
+2018-05-03 13:06:15.249 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 13:06:15.251 [main] INFO  facebook.Utils - La propiedadoauth.accessTokenesta vacia
+2018-05-03 13:06:15.251 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 13:06:20.978 [main] ERROR facebook.Main - An active access token must be used to query information about the current user.
+2018-05-03 13:07:19.366 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 13:07:24.942 [main] INFO  facebook.Main - Iniciando app
+2018-05-03 13:07:24.950 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 13:07:25.035 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 13:07:29.110 [main] INFO  facebook.Utils - Posts guardados en Newsfeed.txt
+2018-05-03 13:07:29.111 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 13:07:52.030 [main] INFO  facebook.Utils - Posts guardados en Wall.txt
+2018-05-03 13:09:06.524 [main] ERROR facebook.Utils - java.net.MalformedURLException: no protocol: f7
+2018-05-03 13:09:06.525 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 13:27:51.988 [main] INFO  facebook.Main - Iniciando app
+2018-05-03 13:27:51.995 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 13:27:52.080 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 13:27:54.600 [main] ERROR facebook.Utils - java.io.IOException: Server returned HTTP response code: 400 for URL: https://graph.facebook.com/v2.12/device/login
+2018-05-03 13:27:54.601 [main] INFO  facebook.Utils - Creando archivo de configuracion
+2018-05-03 13:27:54.601 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 13:28:05.653 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 13:28:14.067 [main] INFO  facebook.Utils - Posts guardados en Newsfeed.txt
+2018-05-03 13:28:14.070 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 13:28:22.299 [main] INFO  facebook.Utils - Posts guardados en Wall.txt
+2018-05-03 13:28:23.151 [main] ERROR facebook.Utils - java.net.MalformedURLException: no protocol: f
+2018-05-03 13:28:23.152 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
+2018-05-03 13:28:37.714 [main] INFO  facebook.Utils - Configurando Instancia de Facebook
