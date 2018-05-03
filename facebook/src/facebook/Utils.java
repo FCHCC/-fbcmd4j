@@ -8,6 +8,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
 import java.nio.file.Files;
+import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -20,6 +21,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import facebook4j.Facebook;
+import facebook4j.FacebookException;
 import facebook4j.FacebookFactory;
 import facebook4j.auth.AccessToken;
 import facebook4j.conf.ConfigurationBuilder;
@@ -31,6 +33,7 @@ public class Utils {
 	
 	public static Properties loadPropertiesFromFile(String folderName, String fileName) throws IOException{
 		Properties props = new Properties();
+		Path configFolder = Paths.get(folderName);
 		Path configFile = Paths.get(folderName, fileName);
 		if(Files.exists(configFile)) {
 				logger.info("Creando archivo de configuracion");
@@ -162,15 +165,49 @@ public class Utils {
 		props.setProperty("oauth.accessToken", accessToken);
 		saveProperties(folderName,fileName,props);
 
-	logger.info("Configuracion guardada");
-	
-	}catch(Exception e) {
+	    logger.info("Configuracion guardada");
+	    catch(Exception e) {
 		logger.error(e);
 	
 	}
 	
-		
 	}
+	
+		
+	
+
+
+public static void saveProperties(String folderName,String fileName,Properties props) throws IOException{
+	Path configFile = Paths.get(folderName, fileName);
+	props.store(Files.newOutputStream(configFile), fileName);	
+}
+
+public static Facebook configurarFacebook(Properties props) {
+		Facebook face = new FacebookFactory().getInstance();
+		logger.info("Configurando Instancia de Facebook");
+		face.setOAuthAppId(props.getProperty("oauth.appId"), props.getProperty("oauth.appSecret"));
+		face.setOAuthPermissions(props.getProperty("oauth.permissions"));
+		if(props.getProperty("oauth.accessToken")!= null) {
+				face.setOAuthAccessToken(new AccessToken(props.getProperty("oauth.accessToken"),null));
+		}
+		
+		return face;
+}
+
+
+public static void publicarEstado(String estado, Facebook fb) throws FacebookException {
+	
+	try {
+		fb.postStatusMessage(estado);
+	}catch(FacebookException e) {
+		logger.error(e);
+	}
+	
+}
+
+}
+
+
 	
 	
 	
