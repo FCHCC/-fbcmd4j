@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.Reader;
 import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLEncoder;
 import java.nio.file.Files;
@@ -24,7 +25,6 @@ import facebook4j.Facebook;
 import facebook4j.FacebookException;
 import facebook4j.FacebookFactory;
 import facebook4j.auth.AccessToken;
-import facebook4j.conf.ConfigurationBuilder;
 import facebook4j.internal.org.json.JSONObject;
 
 public class Utils {
@@ -59,7 +59,7 @@ public class Utils {
 		return props;
 	}
 	
-	public static void obtenerAccessTokens(String foldername, String filename, Properties props, Scanner scanner) {
+	public static void obtenerAccessTokens(String folderName, String fileName, Properties props, Scanner scanner) {
 	
 		if(props.getProperty("oauth.appId").isEmpty() || props.getProperty("oauth.appSecret").isEmpty()) {
 			System.out.println("Ingrese appId: ");
@@ -113,6 +113,7 @@ public class Utils {
 				
 				System.out.println("Ingresa a la pagina https://www.facebook.com/device con el codigo: " +userCode);
 				String accessToken ="";
+				while(accessToken.isEmpty()) {
 				try {
 					TimeUnit.SECONDS.sleep(5);
 				}catch(InterruptedException e){
@@ -166,7 +167,7 @@ public class Utils {
 		saveProperties(folderName,fileName,props);
 
 	    logger.info("Configuracion guardada");
-	    catch(Exception e) {
+		}catch(Exception e) {
 		logger.error(e);
 	
 	}
@@ -200,6 +201,17 @@ public static void publicarEstado(String estado, Facebook fb) throws FacebookExc
 	try {
 		fb.postStatusMessage(estado);
 	}catch(FacebookException e) {
+		logger.error(e);
+	}
+	
+}
+
+public static void compartirLink(String link, Facebook fb)throws MalformedURLException, FacebookException {
+	try {
+		fb.postLink(new URL(link));
+	}catch(MalformedURLException e) {
+		logger.error(e);
+	}catch(FacebookException e){
 		logger.error(e);
 	}
 	

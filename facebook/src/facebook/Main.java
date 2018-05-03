@@ -1,6 +1,8 @@
 package facebook;
 
 import java.io.IOException;
+import java.nio.file.NoSuchFileException;
+import java.util.InputMismatchException;
 import java.util.Properties;
 import java.util.Scanner;
 
@@ -8,6 +10,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import facebook4j.Facebook;
+import facebook4j.FacebookException;
 import facebook4j.Post;
 import facebook4j.ResponseList;
 
@@ -67,12 +70,41 @@ public class Main {
 							break;
 							
 						case 3:
+							System.out.println("Cargando Wall...");
+							ResponseList<Post> wall = fb.getPosts();
+							wall.forEach(System.out::println);
+							
+						case 4:
+							System.out.println("Compartir link: ");
+							String link = scanner.nextLine();
+							Utils.compartirLink(link, fb);
+							break;
+							
+						case 5:
+							System.exit(0);
+						default:
+							logger.error("Opcion invalida");
+							break;
 				}
-			}catch() {
-				
+			}catch(InputMismatchException ex) {
+				System.out.println("Ocurrio un error, favor de revisar log.");
+				logger.error("Opcion invalida. s%. \n", ex.getClass());
+				scanner.next();	
+			}catch(FacebookException ex) {
+				System.out.println("Ocurrio un error, favor de revisar log.");
+				logger.error(ex.getErrorMessage());
+				scanner.next();
+			}catch(NoSuchFileException io) {
+				System.out.println("Archivo de configuracion no existe.");
+			}catch(Exception ex) {
+				System.out.println("Ocurrio un error, favor de revisar log.");
+				logger.error(ex);
+				scanner.next();
 			}
 		}
-		}
+	}catch(Exception ex) {
+		logger.error(ex);
+	}
 
 	}
 
